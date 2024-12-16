@@ -13,6 +13,10 @@ export default defineConfig({
       include: ["src/**/*.js", "src/**/*.jsx"],
       exclude: ["src/main.jsx", "src/App.jsx"],
       reportsDirectory: "./coverage", // Directory where coverage reports will be stored
+      statements: 50, // Minimum % of statements that must be covered
+      branches: 50, // Minimum % of branches that must be covered
+      functions: 50, // Minimum % of functions that must be covered
+      lines: 50, // Minimum % of lines that must be covered
     },
   },
 });
